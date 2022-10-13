@@ -1,0 +1,23 @@
+Source: node-fs-readdir-recursive
+Section: javascript
+Priority: optional
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Pirate Praveen <praveen@debian.org>
+Build-Depends: debhelper-compat (= 13)
+ , mocha <!nocheck>
+ , node-should <!nocheck>
+ , dh-sequence-nodejs
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-fs-readdir-recursive
+Vcs-Git: https://salsa.debian.org/js-team/node-fs-readdir-recursive.git
+Homepage: https://github.com/fs-utils/fs-readdir-recursive
+Testsuite: autopkgtest-pkg-nodejs
+Rules-Requires-Root: no
+
+Package: node-fs-readdir-recursive
+Architecture: all
+Depends: ${misc:Depends}
+ , nodejs
+Multi-Arch: foreign
+Description: Recursively read a directory
+ Node.js is an event-based server-side JavaScript engine.

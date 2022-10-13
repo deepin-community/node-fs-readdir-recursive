@@ -1,0 +1,34 @@
+Description: fix test for debian repo
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2020-04-08
+
+--- a/test/test.js
++++ b/test/test.js
+@@ -15,7 +15,7 @@
+ 
+   it('should work at the root with a filter', function () {
+     var files = read(path.join(__dirname, '..'), function (name) {
+-      return name[0] !== '.' && name !== 'node_modules' && name !== 'coverage' && name !== 'package-lock.json'
++      return name[0] !== '.' && name !== 'debian' && name !== 'node_modules' && name !== 'coverage' && name !== 'package-lock.json'
+     })
+ 
+     files.length.should.equal(5)
+@@ -31,7 +31,7 @@
+ 
+   it('should filter pass dir', function () {
+     var files = read(path.join(__dirname, '..'), function (name, index, dir) {
+-      return name[0] !== '.' && name !== 'node_modules' && name !== 'coverage' && dir !== __dirname && name !== 'package-lock.json'
++      return name[0] !== '.' && name !== 'debian' && name !== 'node_modules' && name !== 'coverage' && dir !== __dirname && name !== 'package-lock.json'
+     })
+ 
+     files.length.should.equal(4)
+@@ -84,7 +84,7 @@
+       fs.symlinkSync(path.join(__dirname, '..'), linkname, 'dir')
+ 
+       var files = read(linkname, function (name) {
+-        return name[0] !== '.' && name !== 'node_modules' && name !== 'coverage' && name !== 'package-lock.json'
++        return name[0] !== '.' && name !== 'debian' && name !== 'node_modules' && name !== 'coverage' && name !== 'package-lock.json'
+       })
+ 
+       files.length.should.equal(5)
