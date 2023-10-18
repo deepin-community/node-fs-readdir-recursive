@@ -10,7 +10,7 @@ Last-Update: 2020-04-08
    it('should work at the root with a filter', function () {
      var files = read(path.join(__dirname, '..'), function (name) {
 -      return name[0] !== '.' && name !== 'node_modules' && name !== 'coverage' && name !== 'package-lock.json'
-+      return name[0] !== '.' && name !== 'debian' && name !== 'node_modules' && name !== 'coverage' && name !== 'package-lock.json'
++      return name[0] !== '.' && name !== 'debian' && name !== 'types-fs-readdir-recursive' && name !== 'node_modules' && name !== 'coverage' && name !== 'package-lock.json'
      })
  
      files.length.should.equal(5)
@@ -19,7 +19,7 @@ Last-Update: 2020-04-08
    it('should filter pass dir', function () {
      var files = read(path.join(__dirname, '..'), function (name, index, dir) {
 -      return name[0] !== '.' && name !== 'node_modules' && name !== 'coverage' && dir !== __dirname && name !== 'package-lock.json'
-+      return name[0] !== '.' && name !== 'debian' && name !== 'node_modules' && name !== 'coverage' && dir !== __dirname && name !== 'package-lock.json'
++      return name[0] !== '.' && name !== 'debian' && name !== 'types-fs-readdir-recursive' && name !== 'node_modules' && name !== 'coverage' && dir !== __dirname && name !== 'package-lock.json'
      })
  
      files.length.should.equal(4)
@@ -28,7 +28,7 @@ Last-Update: 2020-04-08
  
        var files = read(linkname, function (name) {
 -        return name[0] !== '.' && name !== 'node_modules' && name !== 'coverage' && name !== 'package-lock.json'
-+        return name[0] !== '.' && name !== 'debian' && name !== 'node_modules' && name !== 'coverage' && name !== 'package-lock.json'
++        return name[0] !== '.' && name !== 'debian' && name !== 'types-fs-readdir-recursive' && name !== 'node_modules' && name !== 'coverage' && name !== 'package-lock.json'
        })
  
        files.length.should.equal(5)

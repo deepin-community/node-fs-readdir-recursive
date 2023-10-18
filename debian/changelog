@@ -1,3 +1,12 @@
+node-fs-readdir-recursive (1.1.0+~1.1.0-1) unstable; urgency=medium
+
+  * Team upload
+  * Declare compliance with policy 4.6.1
+  * Drop dependency to nodejs
+  * Embed typescript declarations and repack
+
+ -- Yadd <yadd@debian.org>  Mon, 08 Aug 2022 21:52:47 +0200
+
 node-fs-readdir-recursive (1.1.0-2) unstable; urgency=medium
 
   * Team upload

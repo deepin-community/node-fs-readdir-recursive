@@ -2,6 +2,7 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: fs-readdir-recursive
 Upstream-Contact: https://github.com/fs-utils/fs-readdir-recursive/issues
 Source: https://github.com/fs-utils/fs-readdir-recursive#readme
+ https://registry.npmjs.org/@types/fs-readdir-recursive
 
 Files: *
 Copyright: 2014 Jonathan Ong <me@jongleberry.com>
@@ -10,6 +11,10 @@ License: Expat
 Files: debian/*
 Copyright: 2016 Pirate Praveen <praveen@debian.org>
  2020 Yadd <yadd@debian.org>
+License: Expat
+
+Files: types-*/*
+Copyright: Microsoft Corporation
 License: Expat
 
 License: Expat
